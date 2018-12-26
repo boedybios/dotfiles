@@ -63,6 +63,11 @@ Plug 'tpope/vim-fugitive'
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
 
+" The ultimate solution for snippets in Vim
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
 if has('nvim')
         " Provides an extensible and asynchronous completion framework for neovim/Vim8.
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -153,6 +158,12 @@ let g:context_filetype#same_filetypes._ = '_'
 " ============================================================================
 " Disable autocompletion (using deoplete instead)
 let g:jedi#completions_enabled = 0
+
+
+" ============================================================================
+" ULTISNIPS CONFIGURATION
+" ============================================================================
+let g:UltiSnipsUsePythonVersion = 3
 
 
 " ============================================================================
