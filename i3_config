@@ -37,7 +37,6 @@ floating_modifier $mod
 # bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec termite
 
-
 # kill focused window
 bindsym $mod+Shift+q kill
 

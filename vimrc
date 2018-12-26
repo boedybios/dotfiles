@@ -40,6 +40,9 @@ Plug 'Townk/vim-autoclose'
 " Eclipse TaskList
 Plug 'vim-scripts/TaskList.vim'
 
+" A simple tool for presenting slides in vim based on text files.
+Plug 'sotte/presenting.vim'
+
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
