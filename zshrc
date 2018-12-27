@@ -1,6 +1,21 @@
+# ============================================================================
+# DEFAULT LOCATION FOR MANJARO
+# ============================================================================
+~/.zshrc
+
+# ============================================================================
+# REQUIREMENTS
+# ============================================================================
+# - zplug
+# - fzf
+
 source /usr/share/zsh/scripts/zplug/init.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ============================================================================
+# PLUGINS
+# ============================================================================
 
 # autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.
 zplug "wting/autojump"
@@ -17,11 +32,16 @@ zplug "zsh-users/zsh-completions"
 # A simple tool that provides enhanced cd command.
 zplug "b4b4r07/enhancd"
 
-zplug "plugins/git"
+zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/colored-man-pages",   from:oh-my-zsh
 
+# ============================================================================
+# THEMES
+# ============================================================================
 # Load theme file
 # zplug 'dracula/zsh', as:theme
 zplug 'bhilburn/powerlevel9k', as:theme
+
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -34,21 +54,3 @@ fi
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
 
-# ZSH_THEME="robbyrussell"
-
-# function powerline_precmd() {
-#         PS1="$(powerline-shell --shell zsh $?)"
-# }
-
-# function install_powerline_precmd() {
-#         for s in "${precmd_functions[@]}"; do
-#                 if [ "$s" = "powerline_precmd" ]; then
-#                         return
-#                 fi
-#         done
-#         precmd_functions+=(powerline_precmd)
-# }
-
-# if [ "$TERM" != "linux" ]; then
-#         install_powerline_precmd
-# fi
