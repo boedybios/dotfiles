@@ -34,8 +34,10 @@ zplug "zsh-users/zsh-completions"
 # A simple tool that provides enhanced cd command.
 zplug "b4b4r07/enhancd"
 
-zplug "plugins/git",   from:oh-my-zsh
-zplug "plugins/colored-man-pages",   from:oh-my-zsh
+# from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/colorize", from:oh-my-zsh
+zplug "plugins/colored-man-pages", from:oh-my-zsh
 
 
 # ============================================================================
