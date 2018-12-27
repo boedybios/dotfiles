@@ -236,6 +236,9 @@ set smarttab
 " don't wrap text
 set nowrap
 
+" don't fold code
+set nofoldenable
+
 " make completion smarter.
 set ignorecase
 set smartcase
