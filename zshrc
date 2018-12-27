@@ -19,6 +19,9 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 # PLUGINS
 # ============================================================================
 
+# Let zplug manage zplug
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
 # autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.
 zplug "wting/autojump"
 
