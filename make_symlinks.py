@@ -42,7 +42,7 @@ for dotfile in dotfiles:
                                  f'{dotfile.target_fname}[{timestamp}]'))
 print('[DONE]')
 
-print('Creating hard links of new dotfiles to the targeted directories', end=' ')
+print('Creating hard links of new dotfiles', end=' ')
 for dotfile in dotfiles:
     os.link(src=os.path.join(DOTFILES_DIR, dotfile.fname),
             dst=os.path.join(dotfile.target_dname, dotfile.target_fname))
