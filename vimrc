@@ -21,27 +21,14 @@ else
         call plug#begin('~/.vim/plugged')
 endif
 
+" Override configs by directory
+Plug 'arielrossanigo/dir-configs-override.vim'
+
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
 
 " Better file browser
 Plug 'scrooloose/nerdtree'
-
-" Just to add the python go-to-definition and similar features, autocompletion
-" from this plugin is disabled
-Plug 'davidhalter/jedi-vim'
-
-" quoting/parenthesis made simple
-Plug 'tpope/vim-surround'
-
-" Automatically close parenthesis, etc
-Plug 'Townk/vim-autoclose'
-
-" Eclipse TaskList
-Plug 'vim-scripts/TaskList.vim'
-
-" A simple tool for presenting slides in vim based on text files.
-Plug 'sotte/presenting.vim'
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -51,22 +38,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Better language packs
-Plug 'sheerun/vim-polyglot'
+" Eclipse TaskList
+Plug 'vim-scripts/TaskList.vim'
 
-" Easy code formatting
-Plug 'chiel92/vim-autoformat'
-
-" Git integration
-Plug 'tpope/vim-fugitive'
-
-" Large collection of vim colorschemes
-Plug 'flazz/vim-colorschemes'
-
-" The ultimate solution for snippets in Vim
-Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
 
 if has('nvim')
         " Provides an extensible and asynchronous completion framework for neovim/Vim8.
@@ -81,6 +55,42 @@ else
         " Python autocompletion
         Plug 'zchee/deoplete-jedi'
 endif
+
+" Completion from other opened files
+Plug 'Shougo/context_filetype.vim'
+
+" Just to add the python go-to-definition and similar features, autocompletion
+" from this plugin is disabled
+Plug 'davidhalter/jedi-vim'
+
+" Automatically close parenthesis, etc
+Plug 'Townk/vim-autoclose'
+
+" quoting/parenthesis made simple
+Plug 'tpope/vim-surround'
+
+" A simple tool for presenting slides in vim based on text files.
+Plug 'sotte/presenting.vim'
+
+" Better language packs
+Plug 'sheerun/vim-polyglot'
+
+" Automatically sort python imports
+Plug 'fisadev/vim-isort'
+
+" Easy code formatting
+Plug 'chiel92/vim-autoformat'
+
+" Git integration
+Plug 'tpope/vim-fugitive'
+
+" Large collection of vim colorschemes
+Plug 'flazz/vim-colorschemes'
+
+" The ultimate solution for snippets in Vim
+" Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+" Plug 'honza/vim-snippets'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
