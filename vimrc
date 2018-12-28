@@ -11,14 +11,16 @@
 " - vim-plug
 " - python-jedi
 " - fzf
+
+
 " ============================================================================
 " PLUGINS
 " ============================================================================
 " Plugins will be downloaded under the specified directory.
 if has('nvim')
-        call plug#begin('~/.config/nvim/plugged')
+    call plug#begin('~/.config/nvim/plugged')
 else
-        call plug#begin('~/.vim/plugged')
+    call plug#begin('~/.vim/plugged')
 endif
 
 " Override configs by directory
@@ -43,17 +45,17 @@ Plug 'vim-scripts/TaskList.vim'
 
 
 if has('nvim')
-        " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-        " Python autocompletion
-        Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
+    " Provides an extensible and asynchronous completion framework for neovim/Vim8.
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    " Python autocompletion
+    Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 else
-        " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-        Plug 'Shougo/deoplete.nvim'
-        Plug 'roxma/nvim-yarp'
-        Plug 'roxma/vim-hug-neovim-rpc'
-        " Python autocompletion
-        Plug 'zchee/deoplete-jedi'
+    " Provides an extensible and asynchronous completion framework for neovim/Vim8.
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+    " Python autocompletion
+    Plug 'zchee/deoplete-jedi'
 endif
 
 " Completion from other opened files
@@ -153,6 +155,12 @@ let g:NERDDefaultAlign = 'left'
 
 
 " ============================================================================
+" ISORT CONFIGURATION
+" ============================================================================
+let g:vim_isort_python_version = 'python3'
+
+
+" ============================================================================
 " DEOPLETE CONFIGURATION
 " ============================================================================
 let g:deoplete#enable_at_startup = 1
@@ -203,6 +211,7 @@ let g:seoul256_background = 234
 "colorscheme darkspectrum
 colorscheme wombat
 
+
 " ============================================================================
 " AUTOFORMAT CONFIGURATION
 " ============================================================================
@@ -227,6 +236,9 @@ set relativenumber
 " show cursor line
 set cursorline
 
+" when scrolling, keep cursor 3 lines away from screen border
+set scrolloff=3
+
 " show the tab bar
 set showtabline=2
 
@@ -239,6 +251,9 @@ set smartindent
 
 " use spaces instead of tabs
 set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 " use tabs at the start of a line, spaces elsewhere
 set smarttab

@@ -1,8 +1,8 @@
 import os
 import shutil
+from datetime import datetime
 from pathlib import Path
 from typing import NamedTuple
-from datetime import datetime
 
 
 class DotFile(NamedTuple):
