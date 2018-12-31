@@ -98,7 +98,6 @@ zplug "supercrabtree/k"
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-# zplug "plugins/colorize", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 
 
