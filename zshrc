@@ -93,9 +93,8 @@ zplug "zsh-users/zsh-autosuggestions"
 # A collection of extra completions for Zsh.
 zplug "zsh-users/zsh-completions"
 
-# Solarized dircolors plugin for zsh.
-# zplug "seebi/dircolors-solarized"
-zplug "joel-porquet/zsh-dircolors-solarized"
+# make directory listings more readable, adding a bit of color and some git status information on files and directories.
+zplug "supercrabtree/k"
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
