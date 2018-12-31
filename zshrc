@@ -143,6 +143,7 @@ history
 )
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_COLOR_SCHEME='dark'
 
 
 # ============================================================================
