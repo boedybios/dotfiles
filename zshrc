@@ -18,6 +18,18 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 
 
 # ============================================================================
+# ALIAS CONFIGURATION
+# ============================================================================
+alias less='less -i'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ls='colorls'
+alias ll='ls -l'
+alias la='ls -a'
+
+
+# ============================================================================
 # BASIC ZSH CONFIGURATION
 # ============================================================================
 
@@ -99,7 +111,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 
 # make directory listings more readable, adding a bit of color and some git status information on files and directories.
-zplug "supercrabtree/k"
+# zplug "supercrabtree/k"
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
@@ -135,26 +147,17 @@ dir
 vcs
 dir_writable
 )
+
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
 status
 root_indicator
 background_jobs
 history
 )
+
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COLOR_SCHEME='dark'
-
-
-# ============================================================================
-# ALIAS CONFIGURATION
-# ============================================================================
-alias less='less -i'
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
-alias k='k -h'
-alias ls='k'
 
 
 # ============================================================================
