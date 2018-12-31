@@ -14,7 +14,6 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
 # ============================================================================
 # BASIC ZSH CONFIGURATION
 # ============================================================================
@@ -60,6 +59,16 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate
 
 
 # ============================================================================
+# ALIAS CONFIGURATION
+# ============================================================================
+alias less='less -i'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ll='ls -lh'
+
+
+# ============================================================================
 # PLUGINS
 # ============================================================================
 
@@ -84,12 +93,13 @@ zplug "zsh-users/zsh-autosuggestions"
 # A collection of extra completions for Zsh.
 zplug "zsh-users/zsh-completions"
 
-# A simple tool that provides enhanced cd command.
-zplug "b4b4r07/enhancd"
+# Solarized dircolors plugin for zsh.
+# zplug "seebi/dircolors-solarized"
+zplug "joel-porquet/zsh-dircolors-solarized"
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/colorize", from:oh-my-zsh
+# zplug "plugins/colorize", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 
 
@@ -103,10 +113,10 @@ zplug 'bhilburn/powerlevel9k', as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-        printf "Install? [y/N]: "
-        if read -q; then
-                echo; zplug install
-        fi
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
 
 # Then, source plugins and add commands to $PATH
