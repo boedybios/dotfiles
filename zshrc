@@ -14,15 +14,13 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
 # ============================================================================
 # BASIC ZSH CONFIGURATION
 # ============================================================================
 
 # cd by typing directory name if it's not a command
 setopt auto_cd
-
-# automatically list choices on ambiguous completion
-setopt auto_list
 
 # automatically use menu completion
 setopt auto_menu
@@ -48,6 +46,21 @@ setopt correct_all
 # allow comments in interactive shells
 setopt interactive_comments
 
+# automatically list choices on ambiguous completion
+setopt auto_list
+
+# allow completion from within a word/phrase
+setopt complete_in_word
+
+# when using auto-complete, put the first option on the line immediately
+setopt menu_complete
+
+# turn on completion for aliases as well
+setopt complete_aliases
+
+# cycle through menus horizontally instead of vertically
+setopt list_rows_first
+
 # select completions with arrow keys
 zstyle ':completion:*' menu select
 
@@ -66,6 +79,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ll='ls -lh'
+alias la='ls -a'
 
 
 # ============================================================================
