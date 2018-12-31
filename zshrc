@@ -14,6 +14,8 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+POWERLEVEL9K_MODE='nerdfont-complete'
+
 
 # ============================================================================
 # BASIC ZSH CONFIGURATION
@@ -72,17 +74,6 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate
 
 
 # ============================================================================
-# ALIAS CONFIGURATION
-# ============================================================================
-alias less='less -i'
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ll='ls -lh'
-alias la='ls -a'
-
-
-# ============================================================================
 # PLUGINS
 # ============================================================================
 
@@ -133,6 +124,36 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load
+
+
+# ============================================================================
+# POWERLEVEL9K CONFIGURATION
+# ============================================================================
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+# context
+dir
+vcs
+dir_writable
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+status
+root_indicator
+background_jobs
+history
+)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+
+
+# ============================================================================
+# ALIAS CONFIGURATION
+# ============================================================================
+alias less='less -i'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias k='k -h'
+alias ls='k'
 
 
 # ============================================================================
