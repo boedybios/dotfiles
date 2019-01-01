@@ -43,7 +43,6 @@ Plug 'junegunn/fzf.vim'
 " Eclipse TaskList
 Plug 'vim-scripts/TaskList.vim'
 
-
 if has('nvim')
     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
