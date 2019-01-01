@@ -142,7 +142,6 @@ zplug load
 # POWERLEVEL9K CONFIGURATION
 # ============================================================================
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-# context
 dir
 vcs
 dir_writable
@@ -153,6 +152,8 @@ status
 root_indicator
 background_jobs
 history
+context
+time
 )
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
