@@ -71,6 +71,12 @@ Plug 'Townk/vim-autoclose'
 " quoting/parenthesis made simple
 Plug 'tpope/vim-surround'
 
+" continuously updated session files
+Plug 'tpope/vim-obsession'
+
+" Git integration
+Plug 'tpope/vim-fugitive'
+
 " Better language packs
 Plug 'sheerun/vim-polyglot'
 
@@ -79,9 +85,6 @@ Plug 'fisadev/vim-isort'
 
 " Easy code formatting
 Plug 'chiel92/vim-autoformat'
-
-" Git integration
-Plug 'tpope/vim-fugitive'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
