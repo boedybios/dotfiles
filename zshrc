@@ -164,3 +164,8 @@ POWERLEVEL9K_COLOR_SCHEME='dark'
 # CUSTOM STARTUP
 # ============================================================================
 neofetch
+
+
+autoload -U compinit
+compinit
+autoload -U promptinit; promptinit

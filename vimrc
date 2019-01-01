@@ -24,7 +24,7 @@ else
 endif
 
 " Override configs by directory
-Plug 'arielrossanigo/dir-configs-override.vim'
+" Plug 'arielrossanigo/dir-configs-override.vim'
 
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
@@ -71,9 +71,6 @@ Plug 'Townk/vim-autoclose'
 " quoting/parenthesis made simple
 Plug 'tpope/vim-surround'
 
-" A simple tool for presenting slides in vim based on text files.
-Plug 'sotte/presenting.vim'
-
 " Better language packs
 Plug 'sheerun/vim-polyglot'
 
@@ -88,6 +85,9 @@ Plug 'tpope/vim-fugitive'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
+
+" A simple tool for presenting slides in vim based on text files.
+Plug 'sotte/presenting.vim'
 
 " The ultimate solution for snippets in Vim
 " Plug 'SirVer/ultisnips'
