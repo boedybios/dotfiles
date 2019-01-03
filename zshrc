@@ -153,7 +153,7 @@ status
 root_indicator
 background_jobs
 history
-context
+# context
 time
 )
 
