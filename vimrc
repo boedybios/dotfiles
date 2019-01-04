@@ -78,7 +78,7 @@ Plug 'tpope/vim-obsession'
 " Plug 'tpope/vim-fugitive'
 
 " Better language packs
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 
 " Automatically sort python imports
 Plug 'fisadev/vim-isort'
