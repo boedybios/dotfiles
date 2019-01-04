@@ -62,22 +62,22 @@ Plug 'Shougo/context_filetype.vim'
 
 " Just to add the python go-to-definition and similar features, autocompletion
 " from this plugin is disabled
-Plug 'davidhalter/jedi-vim'
-
-" Automatically close parenthesis, etc
-Plug 'Townk/vim-autoclose'
+" Plug 'davidhalter/jedi-vim'
 
 " quoting/parenthesis made simple
 Plug 'tpope/vim-surround'
+
+" Automatically close parenthesis, etc
+Plug 'Townk/vim-autoclose'
 
 " continuously updated session files
 Plug 'tpope/vim-obsession'
 
 " Git integration
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 " Better language packs
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " Automatically sort python imports
 Plug 'fisadev/vim-isort'
