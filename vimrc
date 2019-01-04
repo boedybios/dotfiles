@@ -41,7 +41,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Eclipse TaskList
-Plug 'vim-scripts/TaskList.vim'
+Plug 'fisadev/FixedTaskList.vim'
+" Plug 'vim-scripts/TaskList.vim'
 
 if has('nvim')
     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
@@ -101,6 +102,74 @@ call plug#end()
 
 
 " ============================================================================
+" GLOBAL CONFIGURATION
+" ============================================================================
+" enable syntax highlighting (previously syntax on).
+syntax enable
+
+" show the line number
+set number
+
+" show the relative number
+set relativenumber
+
+" show cursor line
+set cursorline
+
+" when scrolling, keep cursor 3 lines away from screen border
+set scrolloff=3
+
+" show the tab bar
+set showtabline=2
+
+" makes copy and paste work better
+set clipboard=unnamedplus
+
+" automatic indentation
+set autoindent
+set smartindent
+
+" use spaces instead of tabs
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" use tabs at the start of a line, spaces elsewhere
+set smarttab
+
+" don't wrap text
+set nowrap
+
+" don't fold code
+set nofoldenable
+
+" make completion smarter.
+set ignorecase
+set smartcase
+
+" Automatically re-open files after they have changed without prompting.
+set autoread
+
+set visualbell
+set termguicolors
+
+" needed so deoplete can auto select the first suggestion
+set completeopt+=noinsert
+" comment this line to enable autocompletion preview window
+" (displays documentation related to the selected completion option)
+set completeopt-=preview
+
+" autocompletion of files and commands behaves like shell
+" (complete only the common part, list the options that match)
+set wildmode=list:longest
+
+" fix problems with uncommon shells (fish, xonsh) and plugins running commands
+" (neomake, ...)
+set shell=/bin/bash
+
+
+" ============================================================================
 " CUSTOM MAPPINGS
 " ============================================================================
 " Disable arrow keys
@@ -154,6 +223,15 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
+
+
+" ============================================================================
+" AUTOCLOSE ISORT CONFIGURATION
+" ============================================================================
+" Fix to let ESC work as espected with Autoclose plugin
+" (without this, when showing an autocompletion window, ESC won't leave insert
+"  mode)
+let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 
 " ============================================================================
@@ -221,67 +299,3 @@ colorscheme wombat
 autocmd BufWrite * :Autoformat
 " enable/diable verbose mode
 let g:autoformat_verbosemode=0
-
-
-" ============================================================================
-" GLOBAL CONFIGURATION
-" ============================================================================
-" enable syntax highlighting (previously syntax on).
-syntax enable
-
-" show the line number
-set number
-
-" show the relative number
-set relativenumber
-
-" show cursor line
-set cursorline
-
-" when scrolling, keep cursor 3 lines away from screen border
-set scrolloff=3
-
-" show the tab bar
-set showtabline=2
-
-" makes copy and paste work better
-set clipboard=unnamedplus
-
-" automatic indentation
-set autoindent
-set smartindent
-
-" use spaces instead of tabs
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
-" use tabs at the start of a line, spaces elsewhere
-set smarttab
-
-" don't wrap text
-set nowrap
-
-" don't fold code
-set nofoldenable
-
-" make completion smarter.
-set ignorecase
-set smartcase
-
-" Automatically re-open files after they have changed without prompting.
-set autoread
-
-set visualbell
-set termguicolors
-
-" needed so deoplete can auto select the first suggestion
-set completeopt+=noinsert
-" comment this line to enable autocompletion preview window
-" (displays documentation related to the selected completion option)
-set completeopt-=preview
-
-" autocompletion of files and commands behaves like shell
-" (complete only the common part, list the options that match)
-set wildmode=list:longest
