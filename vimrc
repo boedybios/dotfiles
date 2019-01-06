@@ -116,8 +116,8 @@ set relativenumber
 " show cursor line
 set cursorline
 
-" when scrolling, keep cursor 3 lines away from screen border
-set scrolloff=3
+" when scrolling, keep cursor 5 lines away from screen border
+set scrolloff=5
 
 " show the tab bar
 set showtabline=2
