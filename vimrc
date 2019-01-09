@@ -107,6 +107,12 @@ call plug#end()
 " enable syntax highlighting (previously syntax on).
 syntax enable
 
+" set the window’s title, reflecting the file currently being edited.
+set title
+
+" Use an encoding that supports Unicode.
+set encoding=utf-8
+
 " show the line number
 set number
 
@@ -115,6 +121,9 @@ set relativenumber
 
 " show cursor line
 set cursorline
+
+" Always show cursor position.
+set ruler
 
 " when scrolling, keep cursor 5 lines away from screen border
 set scrolloff=5
@@ -151,6 +160,10 @@ set smartcase
 " Automatically re-open files after they have changed without prompting.
 set autoread
 
+" disable beep on errors.
+set noerrorbells
+
+" flash the screen instead of beeping on errors.
 set visualbell
 set termguicolors
 
