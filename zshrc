@@ -19,9 +19,9 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-# set vim as devault text edito
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+# set NeoVim as devault text edito
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 
 
 # ============================================================================
