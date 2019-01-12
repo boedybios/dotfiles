@@ -1,7 +1,7 @@
 # ============================================================================
 # DEFAULT LOCATION FOR MANJARO
-# ============================================================================
-# ~/.zshrc
+    # ============================================================================
+    # ~/.zshrc
 
 
 # ============================================================================
@@ -11,11 +11,17 @@
 # - fzf
 # - colorls
 
+
+# ============================================================================
+# GLOBAL VARIABLE
+# ============================================================================
 source /usr/share/zsh/scripts/zplug/init.zsh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 POWERLEVEL9K_MODE='nerdfont-complete'
+
+# set vim as devault text edito
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
 
 
 # ============================================================================
@@ -35,13 +41,13 @@ alias la='ls -a'
 # ============================================================================
 
 # cd by typing directory name if it's not a command
-setopt auto_cd
+    setopt auto_cd
 
 # automatically use menu completion
 setopt auto_menu
 
 # move cursor to end if word had one match
-setopt always_to_end
+    setopt always_to_end
 
 # remove older duplicate entries from history
 setopt hist_ignore_all_dups
@@ -71,19 +77,19 @@ setopt complete_in_word
 setopt menu_complete
 
 # turn on completion for aliases as well
-setopt complete_aliases
+    setopt complete_aliases
 
 # cycle through menus horizontally instead of vertically
 setopt list_rows_first
 
 # select completions with arrow keys
-zstyle ':completion:*' menu select
+    zstyle ':completion:*' menu select
 
 # group results by category
 zstyle ':completion:*' group-name ''
 
 # enable approximate matches for completion
-zstyle ':completion:::::' completer _expand _complete _ignored _approximate
+    zstyle ':completion:::::' completer _expand _complete _ignored _approximate
 
 
 # ============================================================================
@@ -106,10 +112,10 @@ zplug "zdharma/fast-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 
 # Fish-like fast/unobtrusive autosuggestions for Zsh.
-zplug "zsh-users/zsh-autosuggestions"
+    zplug "zsh-users/zsh-autosuggestions"
 
 # A collection of extra completions for Zsh.
-zplug "zsh-users/zsh-completions"
+    zplug "zsh-users/zsh-completions"
 
 # make directory listings more readable, adding a bit of color and some git status information on files and directories.
 # zplug "supercrabtree/k"
@@ -128,15 +134,15 @@ zplug 'bhilburn/powerlevel9k', as:theme
 
 
 # Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
+    if ! zplug check --verbose; then
+        printf "Install? [y/N]: "
+        if read -q; then
+            echo; zplug install
+        fi
     fi
-fi
 
 # Then, source plugins and add commands to $PATH
-zplug load
+    zplug load
 
 
 # ============================================================================
