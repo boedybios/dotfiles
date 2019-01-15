@@ -58,6 +58,11 @@ else
     " Python autocompletion
     Plug 'zchee/deoplete-jedi'
 endif
+let g:deoplete#enable_at_startup = 1
+
+" adds snippet support to Vim
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 " Completion from other opened files
 Plug 'Shougo/context_filetype.vim'
