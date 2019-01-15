@@ -84,6 +84,9 @@ Plug 'sheerun/vim-polyglot'
 " Automatically sort python imports
 Plug 'fisadev/vim-isort'
 
+" Displaying thin vertical lines at each indentation level
+Plug 'Yggdroot/indentLine'
+
 " Easy code formatting
 Plug 'chiel92/vim-autoformat'
 
