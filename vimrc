@@ -74,6 +74,9 @@ Plug 'Shougo/context_filetype.vim'
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
 
+" Comment stuff out
+Plug 'tpope/vim-commentary'
+
 " quoting/parenthesis made simple
 Plug 'tpope/vim-surround'
 
