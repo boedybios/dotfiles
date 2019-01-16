@@ -89,6 +89,9 @@ Plug 'tpope/vim-obsession'
 " Git integration
 " Plug 'tpope/vim-fugitive'
 
+" Shows a git diff in the gutter (sign column) and stages/undoes hunks.
+Plug 'airblade/vim-gitgutter'
+
 " Better language packs
 Plug 'sheerun/vim-polyglot'
 
