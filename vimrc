@@ -314,7 +314,8 @@ let g:seoul256_background = 234
 "colorscheme seoul256
 "colorscheme seti
 "colorscheme darkspectrum
-colorscheme wombat
+" colorscheme wombat
+colorscheme codedark
 
 
 " ============================================================================
