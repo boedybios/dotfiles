@@ -314,14 +314,14 @@ let g:airline_powerline_fonts = 1
 " ============================================================================
 let g:seoul256_background = 234
 
-"colorscheme kolor
-"coloscheme space-vim-dark
-"colorscheme dracula
-"colorscheme seoul256
-"colorscheme seti
-"colorscheme darkspectrum
-" colorscheme wombat
-colorscheme codedark
+" colorscheme kolor
+" coloscheme space-vim-dark
+" colorscheme dracula
+" colorscheme seoul256
+" colorscheme seti
+" colorscheme darkspectrum
+colorscheme wombat
+" colorscheme codedark
 
 
 " ============================================================================
