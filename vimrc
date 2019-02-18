@@ -163,8 +163,8 @@ set softtabstop=4
 set shiftwidth=4
 
 " place a vertical line as a marker for maximum prescribed text width
-set textwidth=79
-set colorcolumn=+1
+" set textwidth=79
+" set colorcolumn=+1
 
 " use tabs at the start of a line, spaces elsewhere
 set smarttab
