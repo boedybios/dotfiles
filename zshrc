@@ -19,10 +19,12 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-# set NeoVim as devault text edito
+# set NeoVim as devault text editor
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 
+# Maintain terminal color compatibility with tmux
+export TERM="xterm-256color"
 
 # ============================================================================
 # ALIAS CONFIGURATION
