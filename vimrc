@@ -110,6 +110,9 @@ Plug 'flazz/vim-colorschemes'
 " A simple tool for presenting slides in vim based on text files.
 Plug 'sotte/presenting.vim'
 
+" Vim plugin for .tmux.conf
+Plug 'tmux-plugins/vim-tmux'
+
 " The ultimate solution for snippets in Vim
 " Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
