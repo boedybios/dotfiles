@@ -37,6 +37,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" tmuxline
+Plug 'edkolev/tmuxline.vim'
+
 " File Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
