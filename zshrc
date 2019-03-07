@@ -33,9 +33,9 @@ alias less='less -i'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+# alias ls='ls --color'
 # alias ls='colorls'
 alias ls='exa'
-# alias ls='ls --color'
 alias ll='ls -l'
 alias la='ls -a'
 
@@ -44,7 +44,7 @@ alias la='ls -a'
 # BASIC ZSH CONFIGURATION
 # ============================================================================
 
-# cd by typing directory name if it's not a command
+# cd by typing directory name if it is not a command
     setopt auto_cd
 
 # automatically use menu completion
