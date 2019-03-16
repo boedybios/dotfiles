@@ -30,7 +30,7 @@ export TERM="xterm-256color"
 # ALIAS CONFIGURATION
 # ============================================================================
 alias less='less -i'
-alias rm='rm -i'
+# alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 # alias ls='ls --color'
