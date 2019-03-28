@@ -31,6 +31,7 @@ export TERM="xterm-256color"
 # ============================================================================
 alias less='less -i'
 # alias rm='rm -i'
+alias rm='trash-put'
 alias mv='mv -i'
 alias cp='cp -i'
 # alias ls='ls --color'
