@@ -48,27 +48,29 @@ Plug 'junegunn/fzf.vim'
 Plug 'fisadev/FixedTaskList.vim'
 " Plug 'vim-scripts/TaskList.vim'
 
-if has('nvim')
-    " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    " Python autocompletion
-    Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
-else
-    " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-    " Python autocompletion
-    Plug 'zchee/deoplete-jedi'
-endif
-let g:deoplete#enable_at_startup = 1
+" if has('nvim')
+"     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
+"     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"     " Python autocompletion
+"     Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
+" else
+"     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
+"     Plug 'Shougo/deoplete.nvim'
+"     Plug 'roxma/nvim-yarp'
+"     Plug 'roxma/vim-hug-neovim-rpc'
+"     " Python autocompletion
+"     Plug 'zchee/deoplete-jedi'
+" endif
+" let g:deoplete#enable_at_startup = 1
 
-" adds snippet support to Vim
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
+" " adds snippet support to Vim
+" Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet-snippets'
 
-" Completion from other opened files
-Plug 'Shougo/context_filetype.vim'
+" " Completion from other opened files
+" Plug 'Shougo/context_filetype.vim'
+
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Just to add the python go-to-definition and similar features, autocompletion
 " from this plugin is disabled
