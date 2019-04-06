@@ -197,7 +197,7 @@ set autoread
 set noerrorbells
 
 " flash the screen instead of beeping on errors.
-set visualbell
+set novisualbell
 set termguicolors
 
 " needed so deoplete can auto select the first suggestion
