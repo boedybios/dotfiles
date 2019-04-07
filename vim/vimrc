@@ -6,7 +6,7 @@
 
 
 " ============================================================================
-" REQUIREMENTS
+" REQUIREMENTS / DEPENDENCIES
 " ============================================================================
 " - git
 " - vim-plug
@@ -37,9 +37,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" tmuxline
-" Plug 'edkolev/tmuxline.vim'
-
 " File Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -48,33 +45,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'fisadev/FixedTaskList.vim'
 " Plug 'vim-scripts/TaskList.vim'
 
-" if has('nvim')
-"     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-"     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"     " Python autocompletion
-"     Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
-" else
-"     " Provides an extensible and asynchronous completion framework for neovim/Vim8.
-"     Plug 'Shougo/deoplete.nvim'
-"     Plug 'roxma/nvim-yarp'
-"     Plug 'roxma/vim-hug-neovim-rpc'
-"     " Python autocompletion
-"     Plug 'zchee/deoplete-jedi'
-" endif
-" let g:deoplete#enable_at_startup = 1
-
-" " adds snippet support to Vim
-" Plug 'Shougo/neosnippet.vim'
-" Plug 'Shougo/neosnippet-snippets'
-
-" " Completion from other opened files
-" Plug 'Shougo/context_filetype.vim'
-
+" intellisense (autocompletion) engine for vim8 & neovim.
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-
-" Just to add the python go-to-definition and similar features, autocompletion
-" from this plugin is disabled
-" Plug 'davidhalter/jedi-vim'
 
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
@@ -120,11 +92,6 @@ Plug 'lervag/vimtex'
 
 " Vim plugin for .tmux.conf
 Plug 'tmux-plugins/vim-tmux'
-
-" The ultimate solution for snippets in Vim
-" Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-" Plug 'honza/vim-snippets'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -196,7 +163,7 @@ set autoread
 " disable beep on errors.
 set noerrorbells
 
-" flash the screen instead of beeping on errors.
+" [DISABLED] flash the screen instead of beeping on errors.
 set novisualbell
 set termguicolors
 
@@ -326,27 +293,27 @@ let g:vim_isort_python_version = 'python3'
 
 
 " ============================================================================
-" DEOPLETE CONFIGURATION
+" DEOPLETE CONFIGURATION [DISABLED]
 " ============================================================================
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
-" complete with words from any opened file
-let g:context_filetype#same_filetypes = {}
-let g:context_filetype#same_filetypes._ = '_'
+" let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_ignore_case = 1
+" let g:deoplete#enable_smart_case = 1
+" " complete with words from any opened file
+" let g:context_filetype#same_filetypes = {}
+" let g:context_filetype#same_filetypes._ = '_'
 
 
 " ============================================================================
 " JEDI-VIM CONFIGURATION
 " ============================================================================
 " Disable autocompletion (using deoplete instead)
-let g:jedi#completions_enabled = 0
+" let g:jedi#completions_enabled = 0
 
 
 " ============================================================================
 " ULTISNIPS CONFIGURATION
 " ============================================================================
-let g:UltiSnipsUsePythonVersion = 3
+" let g:UltiSnipsUsePythonVersion = 3
 
 
 " ============================================================================
