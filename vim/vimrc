@@ -24,6 +24,7 @@ else
     call plug#begin('~/.vim/plugged')
 endif
 
+
 " Override configs by directory
 " Plug 'arielrossanigo/dir-configs-override.vim'
 
@@ -92,6 +93,9 @@ Plug 'lervag/vimtex'
 
 " Vim plugin for .tmux.conf
 Plug 'tmux-plugins/vim-tmux'
+
+" Adds icons to vim plugins
+Plug 'ryanoasis/vim-devicons'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -339,3 +343,40 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
+
+
+" ============================================================================
+" VIM_DEV_ICONS CONFIGURATION
+" ============================================================================
+" loading the plugin
+let g:webdevicons_enable = 1
+" adding the flags to NERDTree
+let g:webdevicons_enable_nerdtree = 1
+" adding the custom source to unite
+let g:webdevicons_enable_unite = 1
+" adding the column to vimfiler
+let g:webdevicons_enable_vimfiler = 1
+" adding to vim-airline's tabline
+let g:webdevicons_enable_airline_tabline = 1
+" adding to vim-airline's statusline
+let g:webdevicons_enable_airline_statusline = 1
+" ctrlp glyphs
+let g:webdevicons_enable_ctrlp = 1
+" adding to vim-startify screen
+let g:webdevicons_enable_startify = 1
+" adding to flagship's statusline
+let g:webdevicons_enable_flagship_statusline = 1
+" turn on/off file node glyph decorations (not particularly useful)
+let g:WebDevIconsUnicodeDecorateFileNodes = 1
+" use double-width(1) or single-width(0) glyphs
+" only manipulates padding, has no effect on terminal or set(guifont) font
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+" whether or not to show the nerdtree brackets around flags
+let g:webdevicons_conceal_nerdtree_brackets = 1
+" the amount of space to use after the glyph character (default ' ')
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+" Force extra padding in NERDTree so that the filetype icons line up vertically
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+" Adding the custom source to denite
+let g:webdevicons_enable_denite = 1
+
