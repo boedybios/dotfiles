@@ -124,7 +124,12 @@ zplug "zsh-users/zsh-history-substring-search"
     zplug "zsh-users/zsh-completions"
 
 # make directory listings more readable, adding a bit of color and some git status information on files and directories.
-# zplug "supercrabtree/k"
+zplug "supercrabtree/k"
+
+
+# A next-generation cd command with an interactive filter
+zplug "b4b4r07/enhancd"
+
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
