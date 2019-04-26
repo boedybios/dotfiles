@@ -10,7 +10,6 @@
 " ============================================================================
 " - git
 " - vim-plug
-" - python-jedi
 " - fzf
 
 
@@ -313,7 +312,8 @@ let g:minimap_highlight='Visual'
 " AIRLINE CONFIGURATION
 " ============================================================================
 " set airline theme
-let g:airline_theme = 'wombat'
+" let g:airline_theme = 'wombat'
+let g:airline_theme = 'onedark'
 " let g:airline_theme = 'base16'
 " displays all buffers when there's only one tab open
 let g:airline#extensions#tabline#enabled = 1
