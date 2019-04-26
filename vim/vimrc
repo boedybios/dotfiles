@@ -29,7 +29,7 @@ endif
 " Plug 'arielrossanigo/dir-configs-override.vim'
 
 " Code commenter
-Plug 'scrooloose/nerdcommenter'
+" Plug 'scrooloose/nerdcommenter'
 
 " Better file browser
 Plug 'scrooloose/nerdtree'
