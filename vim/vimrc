@@ -324,6 +324,17 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
 
 
+
+" ============================================================================
+" INDENTLINE CONFIGURATION
+" ============================================================================
+" customize conceal color
+let g:indentLine_color_term = 239
+" customize conceal color
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char_list = ['┊']
+
+
 " ============================================================================
 " COLORSCHEME CONFIGURATION
 " ============================================================================
