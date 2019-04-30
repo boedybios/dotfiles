@@ -76,7 +76,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'fisadev/vim-isort'
 
 " Displaying thin vertical lines at each indentation level
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
+
+" Indent Guides is a plugin for visually displaying indent levels in Vim.
+Plug 'nathanaelkane/vim-indent-guides'
 
 " useful overview of the code as a minimap sidebar.
 Plug 'severin-lemaignan/vim-minimap'
@@ -324,15 +327,27 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
 
 
-
 " ============================================================================
 " INDENTLINE CONFIGURATION
 " ============================================================================
-" customize conceal color
-let g:indentLine_color_term = 239
-" customize conceal color
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_char_list = ['┊']
+" " customize conceal color
+" let g:indentLine_color_term = 239
+" " customize conceal color
+" " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" let g:indentLine_char_list = ['┊']
+
+
+" ============================================================================
+" INDENTGUIDE CONFIGURATION
+" ============================================================================
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level           = 1
+let g:indent_guides_auto_colors           = 1
+let g:indent_guides_color_change_percent  = 10
+let g:indent_guides_space_guides          = 1
+let g:indent_guides_tab_guides            = 1
+let g:indent_guides_guide_size            = 1
+let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Preview','__doc__','rst']
 
 
 " ============================================================================
