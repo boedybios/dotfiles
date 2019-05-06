@@ -73,7 +73,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 
 " Automatically sort python imports
-Plug 'fisadev/vim-isort'
+" Plug 'fisadev/vim-isort'
 
 " Displaying thin vertical lines at each indentation level
 " Plug 'Yggdroot/indentLine'
@@ -301,7 +301,7 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " ============================================================================
 " ISORT CONFIGURATION
 " ============================================================================
-let g:vim_isort_python_version = 'python3'
+" let g:vim_isort_python_version = 'python3'
 
 
 " ============================================================================
