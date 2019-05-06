@@ -96,6 +96,9 @@ Plug 'sotte/presenting.vim'
 " Vim plugin for LaTeX
 Plug 'lervag/vimtex'
 
+" Distraction-free writing in Vim.
+Plug 'junegunn/goyo.vim'
+
 " Vim plugin for .tmux.conf
 Plug 'tmux-plugins/vim-tmux'
 
