@@ -17,7 +17,6 @@
 # ============================================================================
 source /usr/share/zsh/scripts/zplug/init.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-POWERLEVEL9K_MODE='nerdfont-complete'
 
 # set NeoVim as devault text editor
 export EDITOR=/usr/bin/nvim
@@ -141,8 +140,8 @@ zplug "plugins/colored-man-pages", from:oh-my-zsh
 # ============================================================================
 # Load theme file
 # zplug 'dracula/zsh', as:theme
-# zplug 'bhilburn/powerlevel9k', as:theme
-zplug 'romkatv/powerlevel10k', use:powerlevel10k.zsh-theme
+zplug 'bhilburn/powerlevel9k', as:theme
+# zplug 'romkatv/powerlevel10k', use:powerlevel10k.zsh-theme
 
 # Install plugins if there are plugins that have not been installed
     if ! zplug check --verbose; then
@@ -159,6 +158,8 @@ zplug 'romkatv/powerlevel10k', use:powerlevel10k.zsh-theme
 # ============================================================================
 # POWERLEVEL9K CONFIGURATION
 # ============================================================================
+POWERLEVEL9K_MODE='nerdfont-complete'
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 dir
 vcs
