@@ -141,7 +141,10 @@ zplug "plugins/colored-man-pages", from:oh-my-zsh
 # Load theme file
 # zplug 'dracula/zsh', as:theme
 zplug 'bhilburn/powerlevel9k', as:theme
-# zplug 'romkatv/powerlevel10k', use:powerlevel10k.zsh-theme
+# zplug "themes/gnzh", from:oh-my-zsh
+# zplug "themes/bira", from:oh-my-zsh
+# zplug "themes/fino", from:oh-my-zsh
+
 
 # Install plugins if there are plugins that have not been installed
     if ! zplug check --verbose; then
