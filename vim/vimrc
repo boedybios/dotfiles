@@ -85,7 +85,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
 
 " Easy code formatting
-" Plug 'chiel92/vim-autoformat'
+Plug 'chiel92/vim-autoformat'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
@@ -250,11 +250,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" CONFIG for coc-prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
 
 " COC MODULES TO BE INSTALLED
 " coc-python
@@ -265,7 +260,6 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " coc-git
 " coc-json
 " coc-pairs"
-" coc-prettier
 
 " ============================================================================
 " FZF CONFIGURATION
