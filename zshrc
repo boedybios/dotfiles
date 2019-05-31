@@ -15,7 +15,7 @@
 # ============================================================================
 # GLOBAL VARIABLE
 # ============================================================================
-source /usr/share/zsh/scripts/zplug/init.zsh
+source ~/.zplug/init.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # set NeoVim as devault text editor

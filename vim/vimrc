@@ -18,9 +18,9 @@
 " ============================================================================
 " Plugins will be downloaded under the specified directory.
 if has('nvim')
-    call plug#begin('~/.config/nvim/plugged')
+	call plug#begin('~/.config/nvim/plugged')
 else
-    call plug#begin('~/.vim/plugged')
+	call plug#begin('~/.vim/plugged')
 endif
 
 
@@ -233,14 +233,14 @@ nnoremap <silent> // :noh<CR>
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-            \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<TAB>" :
-            \ coc#refresh()
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " Use <c-space> for trigger completion.
@@ -249,6 +249,14 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" COC MODULES TO BE INSTALLED
+" coc-python
+" coc-vimtex
+" coc-yaml
+" coc-highlight
+" coc-snippets
+" coc-git
 
 
 " ============================================================================
