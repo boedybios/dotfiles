@@ -47,6 +47,13 @@ Plug 'fisadev/FixedTaskList.vim'
 
 " intellisense (autocompletion) engine for vim8 & neovim.
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
@@ -72,9 +79,6 @@ Plug 'airblade/vim-gitgutter'
 " Better language packs
 Plug 'sheerun/vim-polyglot'
 
-" Automatically sort python imports
-" Plug 'fisadev/vim-isort'
-
 " Displaying thin vertical lines at each indentation level
 " Plug 'Yggdroot/indentLine'
 
@@ -83,9 +87,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 " useful overview of the code as a minimap sidebar.
 Plug 'severin-lemaignan/vim-minimap'
-
-" Easy code formatting
-" Plug 'chiel92/vim-autoformat'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
@@ -251,16 +252,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
-" COC MODULES TO BE INSTALLED
-" coc-python
-" coc-vimtex
-" coc-yaml
-" coc-highlight
-" coc-snippets
-" coc-git
-" coc-json
-" coc-pairs"
-" coc-prettier
 
 " ============================================================================
 " FZF CONFIGURATION
