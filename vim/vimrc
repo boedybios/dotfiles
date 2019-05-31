@@ -85,7 +85,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
 
 " Easy code formatting
-Plug 'chiel92/vim-autoformat'
+" Plug 'chiel92/vim-autoformat'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
@@ -260,6 +260,7 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " coc-git
 " coc-json
 " coc-pairs"
+" coc-prettier
 
 " ============================================================================
 " FZF CONFIGURATION
