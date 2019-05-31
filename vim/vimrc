@@ -18,9 +18,9 @@
 " ============================================================================
 " Plugins will be downloaded under the specified directory.
 if has('nvim')
-	call plug#begin('~/.config/nvim/plugged')
+    call plug#begin('~/.config/nvim/plugged')
 else
-	call plug#begin('~/.vim/plugged')
+    call plug#begin('~/.vim/plugged')
 endif
 
 
@@ -85,7 +85,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
 
 " Easy code formatting
-Plug 'chiel92/vim-autoformat'
+" Plug 'chiel92/vim-autoformat'
 
 " Large collection of vim colorschemes
 Plug 'flazz/vim-colorschemes'
@@ -233,14 +233,14 @@ nnoremap <silent> // :noh<CR>
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-			\ pumvisible() ? "\<C-n>" :
-			\ <SID>check_back_space() ? "\<TAB>" :
-			\ coc#refresh()
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<TAB>" :
+            \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-	let col = col('.') - 1
-	return !col || getline('.')[col - 1]  =~# '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " Use <c-space> for trigger completion.
@@ -257,6 +257,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " coc-highlight
 " coc-snippets
 " coc-git
+" coc-json
+" coc-pairs"
 
 
 " ============================================================================
@@ -381,9 +383,9 @@ colorscheme spacegray
 " AUTOFORMAT CONFIGURATION
 " ============================================================================
 " Autoformat upon saving file
-autocmd BufWrite * :Autoformat
-" enable/diable verbose mode
-let g:autoformat_verbosemode=0
+" autocmd BufWrite * :Autoformat
+" " enable/diable verbose mode
+" let g:autoformat_verbosemode=0
 
 
 " ============================================================================
