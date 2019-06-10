@@ -296,8 +296,8 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 # CUSTOM
 exec --no-startup-id dropbox
-# exec --no-startup-id guake
 exec --no-startup-id slack
+exec --no-startup-id telegram-desktop
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
