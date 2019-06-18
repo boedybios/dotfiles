@@ -370,11 +370,10 @@ let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Pr
 " ============================================================================
 " COLORSCHEME CONFIGURATION
 " ============================================================================
-let g:seoul256_background = 234
-
 " colorscheme kolor
 " coloscheme space-vim-dark
 " colorscheme dracula
+" let g:seoul256_background = 234
 " colorscheme seoul256
 " colorscheme seti
 " colorscheme darkspectrum
