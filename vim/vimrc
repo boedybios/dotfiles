@@ -61,7 +61,7 @@ Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
@@ -76,7 +76,7 @@ Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
 
 " Format code with one button press (or automatically on save).
-" Plug 'Chiel92/vim-autoformat'
+Plug 'Chiel92/vim-autoformat'
 
 " continuously updated session files
 Plug 'tpope/vim-obsession'
