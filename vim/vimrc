@@ -386,9 +386,9 @@ colorscheme spacegray
 " AUTOFORMAT CONFIGURATION
 " ============================================================================
 " Autoformat upon saving file
-" autocmd BufWrite * :Autoformat
+autocmd BufWrite * :Autoformat
 " " enable/diable verbose mode
-" let g:autoformat_verbosemode=0
+let g:autoformat_verbosemode=0
 
 
 " ============================================================================
