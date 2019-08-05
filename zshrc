@@ -40,6 +40,7 @@ alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
 alias vi='nvim'
+alias vim='nvim'
 
 
 # ============================================================================
