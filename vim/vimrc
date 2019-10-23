@@ -70,10 +70,13 @@ Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-vimtex', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-markdownlint', {'do': 'yarn install --frozen-lockfile'}
+
 
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
@@ -118,7 +121,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'sotte/presenting.vim'
 
 " Vim plugin for LaTeX
-Plug 'lervag/vimtex'
+" Plug 'lervag/vimtex'
 
 " Distraction-free writing in Vim.
 Plug 'junegunn/goyo.vim'
