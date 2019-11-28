@@ -64,9 +64,8 @@ Plug 'fisadev/FixedTaskList.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-" useful coc extension: 
-" coc-python, coc-highlight, coc-prettier, coc-lists, coc-json, coc-vimtex
-
+" MUST INSTALL CocInstall coc-lists coc-marketplace
+" THEN CocList marketplace TO INSTALL THE REST EXTENSIONS
 
 " A universal set of defaults that (hopefully) everyone can agree on
 Plug 'tpope/vim-sensible'
