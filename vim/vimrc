@@ -73,7 +73,7 @@ Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-vimtex', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-markdownlint', {'do': 'yarn install --frozen-lockfile'}
 
 
