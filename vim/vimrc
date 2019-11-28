@@ -64,9 +64,8 @@ Plug 'fisadev/FixedTaskList.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 " useful coc extension: 
-" coc-python, coc-highlight, coc-prettier, coc-json, coc-vimtex
+" coc-python, coc-highlight, coc-prettier, coc-lists, coc-json, coc-vimtex
 
 
 " A universal set of defaults that (hopefully) everyone can agree on
