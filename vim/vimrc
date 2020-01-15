@@ -224,7 +224,8 @@ set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
 
-
+" enable mouse
+set mouse=
 " ============================================================================
 " CUSTOM MAPPINGS
 " ============================================================================
