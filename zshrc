@@ -35,8 +35,8 @@ alias mv='mv -i'
 alias cp='cp -i'
 # alias ls='ls --color'
 # alias ls='colorls'
-# alias ls='exa'
-alias ls='lsd'
+alias ls='exa'
+# alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
 alias vi='nvim'
@@ -142,8 +142,8 @@ zplug "plugins/colored-man-pages", from:oh-my-zsh
 # THEMES
 # ============================================================================
 # Load theme file
-# zplug 'dracula/zsh', as:theme
-zplug 'bhilburn/powerlevel9k', as:theme
+# zplug "dracula/zsh", as:theme
+zplug "bhilburn/powerlevel9k", as:theme
 # zplug "themes/gnzh", from:oh-my-zsh
 # zplug "themes/bira", from:oh-my-zsh
 # zplug "themes/fino", from:oh-my-zsh
