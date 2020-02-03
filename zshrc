@@ -106,6 +106,9 @@ zstyle ':completion:*' group-name ''
 # Let zplug manage zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
+# Simple zsh plugin that reminds you that you should use one of your existing aliases for a command you just typed.
+zplug "MichaelAquilina/zsh-you-should-use"
+
 # autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.
 zplug "wting/autojump"
 
@@ -119,18 +122,16 @@ zplug "zdharma/fast-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 
 # Fish-like fast/unobtrusive autosuggestions for Zsh.
-    zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-autosuggestions"
 
 # A collection of extra completions for Zsh.
-    zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-completions"
 
 # make directory listings more readable, adding a bit of color and some git status information on files and directories.
 zplug "supercrabtree/k"
 
-
 # A next-generation cd command with an interactive filter
 zplug "b4b4r07/enhancd"
-
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
