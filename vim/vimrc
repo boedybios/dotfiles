@@ -389,8 +389,9 @@ let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Pr
 " colorscheme seti
 " colorscheme darkspectrum
 " colorscheme wombat
-colorscheme spacegray
+" colorscheme spacegray
 " colorscheme codedark
+colorscheme gruvbox
 
 
 " ============================================================================
