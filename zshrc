@@ -48,13 +48,13 @@ alias vim='nvim'
 # ============================================================================
 
 # cd by typing directory name if it is not a command
-    setopt auto_cd
+setopt auto_cd
 
 # automatically use menu completion
 setopt auto_menu
 
 # move cursor to end if word had one match
-    setopt always_to_end
+setopt always_to_end
 
 # remove older duplicate entries from history
 setopt hist_ignore_all_dups
@@ -84,19 +84,19 @@ setopt complete_in_word
 setopt menu_complete
 
 # turn on completion for aliases as well
-    setopt complete_aliases
+setopt complete_aliases
 
 # cycle through menus horizontally instead of vertically
 setopt list_rows_first
 
 # select completions with arrow keys
-    zstyle ':completion:*' menu select
+zstyle ':completion:*' menu select
 
 # group results by category
 zstyle ':completion:*' group-name ''
 
 # enable approximate matches for completion
-    zstyle ':completion:::::' completer _expand _complete _ignored _approximate
+zstyle ':completion:::::' completer _expand _complete _ignored _approximate
 
 
 # ============================================================================
@@ -131,7 +131,7 @@ zplug "zsh-users/zsh-completions"
 zplug "supercrabtree/k"
 
 # A next-generation cd command with an interactive filter
-zplug "b4b4r07/enhancd"
+# zplug "b4b4r07/enhancd"
 
 # from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
