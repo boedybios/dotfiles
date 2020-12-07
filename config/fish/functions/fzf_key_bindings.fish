@@ -1,0 +1,1 @@
+/home/boedybios/.fzf/shell/key-bindings.fish
