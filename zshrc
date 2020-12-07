@@ -197,3 +197,5 @@ compinit
 autoload -U promptinit; promptinit
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+eval "$(/usr/local/bin/starship init zsh)"
