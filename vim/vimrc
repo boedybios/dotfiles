@@ -391,7 +391,8 @@ let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Pr
 " colorscheme wombat
 " colorscheme spacegray
 " colorscheme codedark
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme nord
 
 
 " ============================================================================
