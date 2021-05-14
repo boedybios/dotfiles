@@ -10,29 +10,29 @@ shell:
   args:
     - --login
 colors:
-  name: Eqie6
-  author: ""
+  # Default colors
   primary:
-    background: "#111111"
-    foreground: "#cccccc"
-  cursor:
-    text: "#111111"
-    cursor: "#cccccc"
+    background: '#3a3a3a'
+    foreground: '#d0d0d0'
+
+  # Normal colors
   normal:
-    black: "#222222"
-    red: "#e84f4f"
-    green: "#b7ce42"
-    yellow: "#fea63c"
-    blue: "#66a9b9"
-    magenta: "#b7416e"
-    cyan: "#6d878d"
-    white: "#cccccc"
+    black: '#4e4e4e'
+    red: '#d68787'
+    green: '#5f865f'
+    yellow: '#d8af5f'
+    blue: '#85add4'
+    magenta: '#d7afaf'
+    cyan: '#87afaf'
+    white: '#d0d0d0'
+
+  # Bright colors
   bright:
-    black: "#666666"
-    red: "#d23d3d"
-    green: "#bde077"
-    yellow: "#ffe863"
-    blue: "#aaccbb"
-    magenta: "#e16a98"
-    cyan: "#42717b"
-    white: "#ffffff"
+    black: '#626262'
+    red: '#d75f87'
+    green: '#87af87'
+    yellow: '#ffd787'
+    blue: '#add4fb'
+    magenta: '#ffafaf'
+    cyan: '#87d7d7'
+    white: '#e4e4e4'
