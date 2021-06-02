@@ -143,7 +143,7 @@ zplug "plugins/colored-man-pages", from:oh-my-zsh
 # ============================================================================
 # Load theme file
 # zplug "dracula/zsh", as:theme
-zplug "bhilburn/powerlevel9k", as:theme
+# zplug "bhilburn/powerlevel9k", as:theme
 # zplug "themes/gnzh", from:oh-my-zsh
 # zplug "themes/bira", from:oh-my-zsh
 # zplug "themes/fino", from:oh-my-zsh
@@ -164,26 +164,26 @@ zplug "bhilburn/powerlevel9k", as:theme
 # ============================================================================
 # POWERLEVEL9K CONFIGURATION
 # ============================================================================
-POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_MODE='nerdfont-complete'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-dir
-vcs
-dir_writable
-)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+# dir
+# vcs
+# dir_writable
+# )
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-status
-root_indicator
-background_jobs
-history
-# context
-time
-)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+# status
+# root_indicator
+# background_jobs
+# history
+# # context
+# time
+# )
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_COLOR_SCHEME='dark'
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_COLOR_SCHEME='dark'
 
 
 # ============================================================================
