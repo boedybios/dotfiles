@@ -3,8 +3,7 @@ import:
   # color is now handled by alacritty-themes
   - ~/.dotfiles/config/alacritty/font.yaml
 
-background_opacity: 0.9
-
+# background_opacity: 0.9
 shell:
   program: /usr/bin/fish
   args:
@@ -12,27 +11,29 @@ shell:
 colors:
   # Default colors
   primary:
-    background: '#3a3a3a'
-    foreground: '#d0d0d0'
+    background: '#282c34'
+    foreground: '#abb2bf'
 
   # Normal colors
   normal:
-    black: '#4e4e4e'
-    red: '#d68787'
-    green: '#5f865f'
-    yellow: '#d8af5f'
-    blue: '#85add4'
-    magenta: '#d7afaf'
-    cyan: '#87afaf'
-    white: '#d0d0d0'
+    # NOTE: Use '#131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black: '#282c34'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
+    white: '#abb2bf'
 
   # Bright colors
   bright:
-    black: '#626262'
-    red: '#d75f87'
-    green: '#87af87'
-    yellow: '#ffd787'
-    blue: '#add4fb'
-    magenta: '#ffafaf'
-    cyan: '#87d7d7'
-    white: '#e4e4e4'
+    black: '#5c6370'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
+    white: '#ffffff'
