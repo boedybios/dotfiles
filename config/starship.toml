@@ -9,3 +9,37 @@ success_symbol = "[❯](bold green)"     # The "success_symbol" segment is being
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
+
+[battery]
+disabled = false
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[hostname]
+disabled = true
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+
+[username]
+show_always = false
+style_user = "bold dimmed blue"
+
+[memory_usage]
+disabled = true
+show_percentage = true
+show_swap = true
+threshold = -1
+symbol = " "
+separator = "/"
+style = "bold dimmed green"

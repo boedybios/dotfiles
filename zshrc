@@ -28,6 +28,7 @@ export TERM="xterm-256color"
 # ============================================================================
 # ALIAS CONFIGURATION
 # ============================================================================
+alias cat='bat'
 alias less='less -i'
 # alias rm='rm -i'
 alias rm='trash-put'
