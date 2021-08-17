@@ -6,8 +6,8 @@ alias la="ls -a"
 
 alias cat="bat"
 
-alias cp="cp -i"
-alias mv="mv -i"
+alias cp="cp -iv"
+alias mv="mv -iv"
 alias rm="trash-put"
 
 alias vi="nvim"
