@@ -28,21 +28,22 @@ export TERM="xterm-256color"
 # ============================================================================
 # ALIAS CONFIGURATION
 # ============================================================================
-alias cat='bat'
-alias less='less -i'
-# alias rm='rm -i'
-alias rm='trash-put'
-alias mv='mv -i'
-alias cp='cp -i'
-# alias ls='ls --color'
-# alias ls='colorls'
-alias ls='exa'
-# alias ls='lsd'
-alias ll='ls -l'
-alias la='ls -a'
-alias vi='nvim'
-alias vim='nvim'
 
+# alias ls="exa"
+alias ls="lsd"
+alias ll="ls -l"
+alias la="ls -al"
+alias l="ls"
+
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="trash-put"
+
+alias vi="nvim"
+alias vim="nvim"
+
+# alias cat="bat"
+alias less="less -i"
 
 # ============================================================================
 # BASIC ZSH CONFIGURATION
