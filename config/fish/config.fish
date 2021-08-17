@@ -1,5 +1,7 @@
 /usr/local/bin/starship init fish | source
 
+fish_add_path ~/.cargo/bin
+
 # alias ls="exa"
 alias ls="lsd"
 alias ll="ls -l"
@@ -15,3 +17,4 @@ alias vim="nvim"
 
 # alias cat="bat"
 alias less="less -i"
+

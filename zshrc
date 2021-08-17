@@ -21,6 +21,7 @@ source ~/.zplug/init.zsh
 # set NeoVim as devault text editor
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
+export PATH=~/.cargo/bin:$PATH
 
 # Maintain terminal color compatibility with tmux
 export TERM="xterm-256color"
