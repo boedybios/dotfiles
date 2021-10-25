@@ -1,6 +1,6 @@
 /usr/local/bin/starship init fish | source
 
-fish_add_path ~/.cargo/bin
+# fish_add_path ~/.cargo/bin
 
 # alias ls="exa"
 alias ls="lsd"

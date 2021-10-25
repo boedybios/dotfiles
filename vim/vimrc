@@ -77,7 +77,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 " Automatically close parenthesis, etc
-" Plug 'Townk/vim-autoclose'
+Plug 'Townk/vim-autoclose'
 
 " Format code with one button press (or automatically on save).
 " Plug 'Chiel92/vim-autoformat'
@@ -104,7 +104,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
 
 " Large collection of vim colorschemes
-Plug 'flazz/vim-colorschemes'
+" Plug 'flazz/vim-colorschemes'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " A simple tool for presenting slides in vim based on text files.
 Plug 'sotte/presenting.vim'
@@ -344,7 +345,8 @@ let g:minimap_highlight='Visual'
 " ============================================================================
 " set airline theme
 " let g:airline_theme = 'wombat'
-let g:airline_theme = 'onedark'
+" let g:airline_theme = 'onedark'
+let g:airline_theme = 'dracula'
 " let g:airline_theme = 'base16'
 " displays all buffers when there's only one tab open
 let g:airline#extensions#tabline#enabled = 1
@@ -383,7 +385,7 @@ let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Pr
 " ============================================================================
 " colorscheme kolor
 " coloscheme space-vim-dark
-" colorscheme dracula
+colorscheme dracula
 " let g:seoul256_background = 234
 " colorscheme seoul256
 " colorscheme seti
@@ -392,7 +394,7 @@ let g:indent_guides_exclude_filetypes     = ['help', 'nerdtree', 'startify', 'Pr
 " colorscheme spacegray
 " colorscheme codedark
 " colorscheme gruvbox
-colorscheme nord
+" colorscheme nord
 
 
 " ============================================================================
