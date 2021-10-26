@@ -1,0 +1,69 @@
+# — Conky settings — #
+
+background yes
+
+update_interval 1
+total_run_times 0
+net_avg_samples 2
+
+override_utf8_locale yes
+
+double_buffer yes
+no_buffers yes
+
+text_buffer_size 2048
+imlib_cache_size 0
+
+
+# — Window specifications — #
+
+own_window_class Conky
+own_window yes
+own_window_type conky
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+border_inner_margin 0
+border_outer_margin 0
+
+minimum_size 220 220
+maximum_width 300
+
+alignment top_left
+
+gap_x 0
+gap_y 30
+
+
+
+# — Graphics settings — #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# — Text settings — #
+use_xft yes
+xftfont LCDMono2:size=14
+xftalpha 1.0
+
+default_color FFFFFF
+
+uppercase no
+use_spacer right
+
+
+# — Lua Load — #
+
+
+lua_load $HOME/.Conky/revolutionary_clocks/rev_mini/cups_n_saucers2.lua
+lua_draw_hook_post main
+
+TEXT
+${voffset 78}${goto 60}${font LCDMono2:size=30}${time %H:%M}${font}
+${voffset 2}${goto 60}${time %a %d %b}  
+${voffset 600}  
+
+
+
+

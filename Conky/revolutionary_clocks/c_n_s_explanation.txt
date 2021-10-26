@@ -1,0 +1,83 @@
+cups_n_saucers.lua script v2.0.1 explantaion 
+by Abu Yahya v1.0 05/06/12
+
+Following parameters are essential otherwise will output as nil value
+name='', (as parsed by conky) 
+arg='', (parsed by conky so may allow balank if not try '/)'
+max_value='',  (maximum value for the parameter
+x='', the horizontal position for radius of cups saurcers and graduations
+y='', vertical posisiotn for radius
+
+The rest of the paramaters have default values if not specifically stated.
+------------------------------------
+The script allows 3 components 
+
+1. typical clock hands or radial gauge indicators - called handle
+
+2. a base circular graph having a fixed background and fixed starting  point foreground and end point is the (string) value - called cups   
+
+3. connected thick and thin rings that do not have a fixed starting point but move as a funtion of the value. inaddition the thick rings circumference is also increases with the (string) value. called thick and thin saucers. note the thin sauuceris 1 pixel thick and overlaps either the inner or outer circumfence of the thick saucer. 
+
+------------------------------------
+Non-essential parameters
+
+cup_radius is the radial distance to the center of the cup wall and the center of the handle. by default this is a quarter of the conky window width.
+
+cup_start_angle is the angular position from which the 0 string value is based and relative to the upward position, can range from 0 - 360. default is 0 which is set to the upward position.  
+
+total_angle is the angle from the cup_start_angle that the cup (graph should end at. for a full circle this is 360 and for a semicircle it is 180. for clockwise motion it is a positive vlaue and for anticlockwise motion it is a negative value (e.g. -360). default is 360.    
+
+cup_wall_thickness is the distance starting from the cup_radius and extending simultanously both away and towards the radius and defines the radial thickness of the base circular graph background or cup wall. default is 20.
+
+handle_length is the distance from the cup-radius and extends simultanously both towards and away from the radius. if set the same as cup_wall_thickness then will be confined within the cup (graph) arc. if set to the double the cup_radius will originate from x,y centre point. default is 20.
+
+handle_circ is the circumferential distance (or thickness) of the handle at the handle starting point i.e. the cup_radius.
+
+saucer_radius is the distance from x,y to the saucer's inner  circumference. default is half of conky window width.
+
+total_saucer_angle is the angle from the cup_start_angle that the cup (graph should end at. for a full circle this is 360 and for a semicircle it is 180. direction of motion is determined by total_angle. acceptable range is 0 - 360. default is 360.  
+
+saucer_thickness is the radial distance of the thick saucer. default is 6. note the thin saucer is set to 1 pixel thickness to prevent displaying it but allowing the thick saucer set thin_saucer_circ to 0 see later.
+
+thick_saucer_circ is the relative circumferential distance of the total_saucer_angle when the string value reaches the max_value. if total_saucer_angle is set to 360 (i.e full circle) then thick_saucer_circ would need to be 1.0 for a full circle. Default is 0.9 which gives a 90% circle with 10% incomplete centered at the saucer mark (providing total_saucer_angle is 360).
+
+thin_saucer_circ is the relative circumferential distance of the total_saucer_angle as described above. its circumferential distance is defined  and does not change relative to the string value like thick_saucer_circ. its radial thickness is restricted to 1 pixel and overlaps the inner or outer circumfence of thick_saucer_circ. the two saucers move together. default is 0.9.
+
+inner_saucer determines the position of the thick_saucer relative to the thin saucer. set to true then the thick saucer is on the inner aspect of the thin saucer. default is false (nil).
+
+(saucer mark is the string value  whose radial distance is dependent upon saucer_thickness while its circumfential distance is dependent upon handle_circ ). its position is at the string value but relative to the saucer is dependent upon 
+
+graduation_radius is the radial distance from x,y fo the position of the graduation marks. graduation marks are within the total_angle and follow its clockwise or anticlockwise direction from the cup_start_angle. default is a third of conky window width.
+
+graduation_thickness is the radial distance of each graduation mark. default is 2.
+
+graduation_mark_circ is the circumferential distance of each graduation mark. default is 1.
+
+graduation_mark_angle is the angular measurement between on graduation mark and the next.  default is total_angle/10 giving 10 graduation marks. (for a hourly clock gradutation you would set it at 30 (degrees) [=360/12] )
+  
+ 
+xtxt is the position of any desired text relative to centre, x. negative number would move left and positive number move right. default is 0 (i.e at  x )
+
+ytxt is the position of any desired text relative to centre, y. negative number would move up and positive number move down. default is 0 (i.e at  y )
+
+caption= 'add text here ',   
+returns the above text (e.g. add text here) before the string value. can include spaces. default is blank.
+
+caption2= 'add text here ',   
+returns the above text (e.g. add text here) after the string value. can include spaces. useful for units e.g %.  default is blank.
+
+...._clr is the hex value representation of colours default is 0xffffff (white)
+
+....._alpha is the degree of visibility ranging from 0.0 to 1.0.  ).0 is invisible and 1.0 is opaque and graded levels of transparency between the two (0.1 - 0.9). defaults are set to 0.  THIS IS IMPORTANT to change if you wish to make something visible.
+
+fg refers to foreground
+bg refers to background 
+if undiffined then foreground is intented. 
+
+cup_sector_angle and cup_sector_circ are both obselete parameters
+
+Hopefully most of it was covered.
+
+
+
+
