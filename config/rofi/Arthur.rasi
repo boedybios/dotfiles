@@ -80,6 +80,7 @@ configuration {
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
+    width: 25%;
 }
 
 #mainbox {

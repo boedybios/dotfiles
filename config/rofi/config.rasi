@@ -49,7 +49,7 @@ window {
     border-radius:    12px;
     fullscreen:	      false;
     transparency:     "screenshot";
-    width:            30%;
+    width:            25%;
 }
 mainbox {
     padding: 10;
