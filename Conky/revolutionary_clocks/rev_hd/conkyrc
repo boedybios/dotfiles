@@ -25,7 +25,7 @@ conky.config = {
 	draw_borders = false,
 	draw_graph_borders = false,
 	use_xft = true,
-	font = 'LCDMono2:size=8.1',
+	font = 'LCDMono2:size=9',
 	xftalpha = 1.0,
 	default_color = 'FFFFFF',
 	uppercase = false,
